@@ -1,1 +1,1 @@
-Hallo, Wereld! Daar zijn we dan!
+Hallo wereld, daar zijn we dan!
