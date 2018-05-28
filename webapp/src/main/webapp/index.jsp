@@ -1,1 +1,1 @@
-Hallo wereld, daar zijn we dan! Nu vanuit een pipeline.
+Hallo wereld, daar zijn we dan! Nu dan wel vanuit een pipeline?

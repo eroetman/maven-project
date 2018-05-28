@@ -17,7 +17,7 @@ pipeline {
         
         stage ('Deploy to Staging'){
             steps {
-                build job: 'Deploy-to-staging'
+                build job: 'deploy-to-staging'
             }
         }
         
@@ -26,7 +26,7 @@ pipeline {
                 timeout(time:5, unit:'DAYS'){
                     input message:'Approve PRD Deployment?'
                 }
-                build job: 'Deploy-to-final'
+                build job: 'deploy-to-final'
             }
             post {
                 success {
