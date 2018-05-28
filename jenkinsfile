@@ -2,13 +2,17 @@ pipeline {
 
     agent any
 
-    def rtMaven = Artifactory.newMavenBuild()
+    // def rtMaven = Artifactory.newMavenBuild()
+
+    tools {
+        maven 'localMaven'
+    }
 
     stages{
         stage('Build'){
             steps {
-                rtMaven.run pom: 'pom.xml', goals: 'clean package'
-                // sh 'mvn clean package'
+                // rtMaven.run pom: 'pom.xml', goals: 'clean package'
+                sh 'mvn clean package'
             }
             post {
                 success {
